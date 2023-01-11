@@ -7,6 +7,7 @@ export default function Header(props) {
   const { name, order, image, type } = props;
   const color = getColorByPokemonType(type);
   const bgStyle = [{ backgroundColor: color, ...styles.bg }];
+  console.log(props);
   return (
     <>
       <View style={bgStyle} />
